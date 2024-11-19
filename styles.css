@@ -79,3 +79,44 @@ nav a:hover {
         margin-bottom: 20px;
     }
 }
+
+/*footer stuff*/
+
+footer {
+    background-color: #F5F5DC;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*make footer stick to bottom*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
