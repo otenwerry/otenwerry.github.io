@@ -120,3 +120,35 @@ body {
 .main-content {
     flex: 1;
 }
+
+/*projects grid*/
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fafafa;
+}
+
+.project-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-item h2 {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-item a:hover h2 {
+    color: #007BFF;
+}
