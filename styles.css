@@ -28,3 +28,54 @@ nav a:hover {
     background-color: #ddd;
     color: black;
 }
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    align-items: flex-start;
+    background-color: #fafafa;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 40px;
+}
+
+.left-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.right-column {
+    flex: 2;
+    min-width: 300px;
+}
+
+.right-column h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.right-column p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-column, .right-column {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .left-column {
+        margin-bottom: 20px;
+    }
+}
