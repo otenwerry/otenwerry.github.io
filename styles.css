@@ -135,7 +135,7 @@ footer a:active {
 .project-item {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .project-info {
@@ -143,20 +143,25 @@ footer a:active {
 }
 
 .project-info h2 {
-    margin: 0 0 10px;
+    margin: 0;
     font-size: 1.8em;
     font-style: italic;
     color: #555555;
 }
 
-.project-info p {
-    margin: 0 0 0 30px;
+/*line with links*/
+.project-info p:nth-of-type(1) {
     font-size: 1.1em;
     line-height: 1.6;
+    margin: 0 0 5px 0;
+    color: #555555;
 }
 
-.project-info p em {
-    color: #555555;
+/*line with description*/
+.project-info p:nth-of-type(2) {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0 0 0 15px;
 }
 
 .project-info p em a {
