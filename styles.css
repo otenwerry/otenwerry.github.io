@@ -1,10 +1,33 @@
-/*overall styles?*/
+/*global styles*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column; /*lets footer stick to bottom*/
 }
+
+/*global link styles*/
+
+a:link, a:visited {
+    color: #555555;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+a:active {
+    color: #004080;
+}
+
+/*navigation bar styles*/
 
 nav {
     background-color: #F5F5DC;
@@ -20,18 +43,21 @@ nav {
 
 nav a {
     display: inline-block;
-    color: #333;
+    color: #333333;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #ddd;
+    background-color: #dddddd;
     color: black;
 }
 
+/*main content styles*/
+
 .main-content {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
@@ -39,8 +65,9 @@ nav a:hover {
     background-color: #fafafa;
 }
 
+/*left column styles, like images*/
 .left-column {
-    flex: 1;
+    flex: 1; /*takes less space*/
     max-width: 300px;
     margin-right: 40px;
 }
@@ -51,8 +78,9 @@ nav a:hover {
     border-radius: 8px;
 }
 
+/*right column styles, like text*/
 .right-column {
-    flex: 2;
+    flex: 2; /*takes more space*/
     min-width: 300px;
 }
 
@@ -67,41 +95,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/*global link styles*/
-
-a:link {
-    color: #555555;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #555555;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
-a:active {
-    color: #004080;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    .left-column, .right-column {
-        max-width: 100%;
-        margin-right: 0;
-    }
-    .left-column {
-        margin-bottom: 20px;
-    }
-}
-
-/*footer stuff*/
+/*footer styles*/
 
 footer {
     background-color: #F5F5DC;
@@ -126,23 +120,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/*make footer stick to bottom*/
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-content {
-    flex: 1;
-}
-
-/*projects list*/
+/*projects list styles*/
 
 .projects-list {
     padding: 40px;
@@ -177,15 +155,24 @@ body {
     transition: color 0.3s ease;
 }
 
-.project-info p em a:hover {
-    color: #007BFF;
-}
-
-.project-info p em a:visited {
-    color: #555555;
-}
+/*responsive design*/
 
 @media (max-width: 768px) {
+
+    /*stack main content vertically*/
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-column, .right-column {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .left-column {
+        margin-bottom: 20px;
+    }
+
+    /*stack project items vertically*/
     .project-item {
         flex-direction: column;
         align-items: center;
