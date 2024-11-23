@@ -41,7 +41,7 @@ nav {
     display: flex;
 }
 
-nav a {
+nav a:link, nav a:visited {
     display: inline-block;
     color: #333333;
     text-align: center;
@@ -110,13 +110,14 @@ footer {
     align-items: center;
 }
 
-footer a {
+footer a:link, footer a:visited {
     color: #007BFF;
     text-decoration: none;
     margin: 0 10px;
 }
 
 footer a:hover {
+    color: #0056b3;
     text-decoration: underline;
 }
 
@@ -151,8 +152,11 @@ footer a:hover {
 }
 
 .project-info p em a {
-    color: #555555;
     transition: color 0.3s ease;
+}
+
+.project-info p em a:hover {
+    color: #0056b3;
 }
 
 /*responsive design*/
