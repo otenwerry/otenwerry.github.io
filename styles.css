@@ -155,13 +155,6 @@ body {
     margin-bottom: 30px;
 }
 
-.project-item img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 20px;
-}
-
 .project-info {
     flex: 1;
 }
