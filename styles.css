@@ -54,9 +54,9 @@ nav a:hover {
     color: black;
 }
 
-/*main content styles*/
+/*home content styles*/
 
-.main-content {
+.home-content {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
@@ -65,31 +65,31 @@ nav a:hover {
     background-color: #fafafa;
 }
 
-/*left column styles, like images*/
-.left-column {
+/*left column style (the image)*/
+.home-left {
     flex: 1; /*takes less space*/
     max-width: 300px;
     margin-right: 40px;
 }
 
-.left-column img {
+.home-left img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/*right column styles, like text*/
-.right-column {
+/*right column style (the text)*/
+.home-right {
     flex: 2; /*takes more space*/
     min-width: 300px;
 }
 
-.right-column h1 {
+.home-right h1 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.right-column p {
+.home-right p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -159,16 +159,16 @@ footer a:hover {
 
 @media (max-width: 768px) {
 
-    /*stack main content vertically*/
-    .main-content {
+    /*stack home content vertically*/
+    .home-content {
         flex-direction: column;
         align-items: center;
     }
-    .left-column, .right-column {
+    .home-left, .home-right {
         max-width: 100%;
         margin-right: 0;
     }
-    .left-column {
+    .home-left {
         margin-bottom: 20px;
     }
 
