@@ -130,6 +130,7 @@ footer a:active {
 .projects-list {
     padding: 40px;
     background-color: #fafafa;
+    flex: 1;
 }
 
 .project-item {
