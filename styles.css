@@ -3,7 +3,11 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100vh; /*footer stick to bottom*/
+}
+
+nav, footer {
+    flex-shrink: 0; /*don't shrink when content overflows*/
 }
 
 body {
