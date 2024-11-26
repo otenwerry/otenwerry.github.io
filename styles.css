@@ -12,7 +12,7 @@ nav, footer {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column; /*stacks nav, main content, and footer on top of each other*/
 }
