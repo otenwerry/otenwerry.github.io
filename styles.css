@@ -8,6 +8,7 @@ html, body {
 
 nav, footer {
     flex-shrink: 0; /*don't shrink when content overflows*/
+
 }
 
 body {
@@ -72,7 +73,7 @@ nav a:hover {
     flex-wrap: wrap;
     padding: 40px;
     align-items: flex-start;
-    background-color: #fafafa;
+    background-color: #f9f9f9;
 }
 
 /*left column style (the image)*/
@@ -139,7 +140,7 @@ footer a:active {
 
 .projects-list {
     padding: 40px;
-    background-color: #fafafa;
+    background-color: #f9f9f9;
     flex: 1;
 }
 
@@ -187,19 +188,34 @@ footer a:active {
 /*writing post styles*/
 
 .post-content {
-    padding: 40px;
-    background-color: #ffffff;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Merriweather', serif;
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .post-content h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #333333;
 }
 
 .post-content p {
-    font-size: 1.1em;
+    font-size: 1.15em;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 1.5em;
+    color: #555555;
+}
+
+.post-content p:nth-of-type(1):first-letter {
+    font-size: 2.5em;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
 }
 
 /*responsive design*/
