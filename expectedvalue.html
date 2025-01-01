@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Expected value article</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- Load MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+  </head>
+  <body>
+    <!--menu bar-->
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Owen Terry</a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="writing.html">Writing</a>
+        </div>
+    </nav>
+    <!--article-->
+    <div class="main-content">
+      <div class="post-content">
+        <h1>Expected Value Maximization in Extreme Cases</h1>
+        <p>
+          The decision theory framework developed by John von Neumann and Oskar Morgenstern 
+          gives a way, under particular conditions, to pick the better of two actions with 
+          uncertain outcomes by evaluating the “expected value” of each action, and picking 
+          the one with the higher EV. In particular, suppose we have a set \( Z \) of outcomes, 
+          and a set \(P\) of probability functions \(p: Z \to [0,1]\). Here, elements of \(P\) 
+          represent 
+          actions. If I take the action associated with \(p \in P\) , I don’t know for sure what 
+          outcome it will lead to, but I do know that the probability it leads to any
+          outcome \(z\) is \(p(z)\). When we have such sets \(Z\) and \(P\), the 
+          von Neumann-Morgenstern
+          Representation Theorem tells us that a preference relation \(\le\) defined on \(P\) 
+          satisfying the Substitution and Archimedean Axioms (defined later) is necessary 
+          and sufficient for the existence of a utility function \(u: Z \to \mathbb{R}\) such that 
+          \[
+            p \le q \text{ if and only if } \sum_{z \in Z}p(z)u(z) \le \sum_{z \in Z}q(z)u(z).
+          \] 
+          (Note that the former \(\le\) is the 
+          preference relation, while the latter \(\le\) is the total order relation defined on 
+          \(\mathbb{R}\).) 
+          That is, if we have probability functions \(p\) and \(q\), i.e. actions, and we have a 
+          preference relation defined on our set of actions that satisfies the two axioms, 
+          we can figure out what the preference relation says we should do by figuring out 
+          the appropriate utility function \(u\), and then computing the expected values of 
+          each probability function with respect to that utility function. We will 
+          write \(\mathbb{E}(p(x))\) to mean the expected utility \(\sum_{z \in Z}p(z)u(z)\).
+        </p>
+
+
+      </div>
+    </div>
+    <footer>
+      ...
+    </footer>
+  </body>
+</html>
