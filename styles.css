@@ -138,23 +138,23 @@ footer a:active {
 
 /*projects list styles*/
 
-.projects-list {
+.content-list {
     padding: 40px;
     background-color: #f9f9f9;
     flex: 1;
 }
 
-.project-item {
+.content-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.project-info {
+.content-item-body {
     flex: 1;
 }
 
-.project-info h2 {
+.content-item-body h2 {
     margin: 0;
     font-size: 1.8em;
     font-style: italic;
@@ -163,7 +163,7 @@ footer a:active {
 }
 
 /*line with links*/
-.project-info p:nth-of-type(1) {
+.content-item-body p:nth-of-type(1) {
     font-size: 1.1em;
     line-height: 1.6;
     margin: 0 0 5px 0;
@@ -171,18 +171,18 @@ footer a:active {
 }
 
 /*line with description*/
-.project-info p:nth-of-type(2) {
+.content-item-body p:nth-of-type(2) {
     font-size: 1.1em;
     line-height: 1.6;
     margin: 0 0 0 15px;
 }
 
-.project-info p em a {
+.content-item-body p em a {
     color: #000000;
     transition: color 0.3s ease;
 }
 
-.project-info p em a:hover {
+.content-item-body p em a:hover {
     color: #0056b3;
 }
 
@@ -246,16 +246,16 @@ footer a:active {
     }
 
     /*stack project items vertically*/
-    .project-item {
+    .content-item {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .project-item img {
+    .content-item img {
         margin-right: 0;
         margin-bottom: 15px;
     }
-    .project-info h2 a:hover {
+    .content-item-body h2 a:hover {
         color: #007BFF;
     }
 }
