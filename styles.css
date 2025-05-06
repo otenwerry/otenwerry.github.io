@@ -136,25 +136,25 @@ footer a:active {
     color: #004080;
 }
 
-/* list styles*/
+/*projects list styles*/
 
-.listing {
+.projects-list {
     padding: 40px;
     background-color: #f9f9f9;
     flex: 1;
 }
 
-.listing__item {
+.project-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.listing__body {
+.project-info {
     flex: 1;
 }
 
-.listing__body h2 {
+.project-info h2 {
     margin: 0;
     font-size: 1.8em;
     font-style: italic;
@@ -163,7 +163,7 @@ footer a:active {
 }
 
 /*line with links*/
-.listing__body p:nth-of-type(1) {
+.project-info p:nth-of-type(1) {
     font-size: 1.1em;
     line-height: 1.6;
     margin: 0 0 5px 0;
@@ -171,18 +171,18 @@ footer a:active {
 }
 
 /*line with description*/
-.listing__body p:nth-of-type(2) {
+.project-info p:nth-of-type(2) {
     font-size: 1.1em;
     line-height: 1.6;
     margin: 0 0 0 15px;
 }
 
-.listing__body p em a {
+.project-info p em a {
     color: #000000;
     transition: color 0.3s ease;
 }
 
-.listing__body p em a:hover {
+.project-info p em a:hover {
     color: #0056b3;
 }
 
