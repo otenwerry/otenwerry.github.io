@@ -177,11 +177,6 @@ footer a:active {
     margin: 0 0 0 15px;
 }
 
-.content-item-body p em a {
-    color: #000000;
-    transition: color 0.3s ease;
-}
-
 .content-item-body p em a:hover {
     color: #0056b3;
 }
