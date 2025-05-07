@@ -181,7 +181,14 @@ footer a:active {
     color: #0056b3;
 }
 
-/* PDF container styles */
+
+
+/* PDF styles */
+
+.pdf-page {
+    padding: 0;
+}
+
 .pdf-container {
     flex: 1;
     display: flex;
