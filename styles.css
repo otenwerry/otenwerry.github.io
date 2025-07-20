@@ -148,6 +148,7 @@ footer a:active {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: 20px; /* Add indentation to content items */
 }
 
 .content-item-body {
@@ -174,7 +175,7 @@ footer a:active {
 .content-item-body p:nth-of-type(2) {
     font-size: 1.1em;
     line-height: 1.6;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 0; /* Remove the left margin to un-indent descriptions */
 }
 
 .content-item-body p em a:hover {
