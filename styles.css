@@ -266,8 +266,13 @@ footer a:active {
     .content-item {
         flex-direction: column;
     }
+    /*style image*/
     .content-item img {
         margin-right: 0;
         margin-bottom: 15px;
+    }
+    /*shrink menu bar text*/
+    nav a {
+        font-size: 0.95em;
     }
 }
