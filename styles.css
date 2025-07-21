@@ -249,9 +249,9 @@ footer a:active {
 
 @media (max-width: 768px) {
 
-    /*stack home content vertically*/
+    /*stack home content vertically, with left below right*/
     .home-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .home-left, .home-right {
