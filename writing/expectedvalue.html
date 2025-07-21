@@ -35,7 +35,7 @@
         <p>
           The decision theory framework developed by John von Neumann and Oskar Morgenstern 
           gives a way, under particular conditions, to pick the better of two actions with 
-          uncertain outcomes by evaluating the “expected value” of each action, and picking 
+          uncertain outcomes by evaluating the “expected value” (EV) of each action, and picking 
           the one with the higher EV. In particular, suppose we have a set \( Z \) of outcomes, 
           and a set \(P\) of probability functions \(p: Z \to [0,1]\). Here, elements of \(P\) 
           represent 
@@ -50,13 +50,13 @@
             p \le q \text{ if and only if } \sum_{z \in Z}p(z)u(z) \le \sum_{z \in Z}q(z)u(z).
           \] 
           (Note that the former \(\le\) is the 
-          preference relation, while the latter \(\le\) is the total order relation defined on 
+          preference relation, while the latter \(\le\) is the standard ordering relation defined on 
           \(\mathbb{R}\).) 
           That is, if we have probability functions \(p\) and \(q\), i.e. actions, and we have a 
           preference relation defined on our set of actions that satisfies the two axioms, 
           we can figure out what the preference relation says we should do by figuring out 
           the appropriate utility function \(u\), and then computing the expected values of 
-          each probability function with respect to that utility function. We will 
+          each probability function under \(u\). We will 
           write \(\mathbb{E}(p(x))\) to mean the expected utility \(\sum_{z \in Z}p(z)u(z)\).
         </p>
         <p>
@@ -78,12 +78,11 @@
           whether utility is relevant to decision-making at all.
         </p>
         <p>
-          Consider first the case of Pascal's Mugging, a hypothetical proposed by 
-          Eliezer Yudkowsky and with a variation by Nick Bostrom. A mugger demands five 
+          Consider first the case of Pascal's Mugging. A mugger demands five 
           dollars from you, but he doesn't have a gun. Instead, he claims that you 
-          live in the Matrix, he's from outside the matrix, and if you don't give him 
+          live in the Matrix, he's from outside the Matrix, and if you don't give him 
           the money, he's going to go back outside the matrix, generate a simulation with 
-          a VERY LARGE number of people, and painfully kill them all. The mugger knows 
+          a very large number of people, and painfully kill them all. The mugger knows 
           that you, Pascal, are a benevolent person: you have lower utilities for 
           outcomes where people die than outcomes where they don't, and lower utilities 
           for outcomes where more people die than where fewer people do. He also knows 
@@ -112,7 +111,7 @@
         <p>
           Here's another example: you're given a chance to flip a coin. If it lands 
           heads, the consequence will be a world with 2.1x as much utility for you as 
-          there is right now. If it lands tails, the consequence will be a world with 
+          there is right now, for whatever your notion of utility is. If it lands tails, the consequence will be a world with 
           0 utility for you. You can flip the coin as many times as you want, including 
           0. Naturally, the game ends once you land tails, because at utility 0 
           it doesn't matter what you multiply it by anymore. The expected value of one 
@@ -121,7 +120,7 @@
             \mathbb{E}(p(x)) = (2.1x \cdot 0.5) + (0x \cdot 0.5) = 1.05x,
           \] 
           where \(x\) is your current utility. And the situation is the same on every 
-          flip! The expected value of flipping $n$ times is \(1.05^nx\), which 
+          flip! The expected value of flipping \(n\) times is \(1.05^nx\), which 
           approaches infinity as \(n\) does. Thus, the expected value maximizer 
           flips the coin over and over until it comes up tails. Despite the expectation 
           of infinite utility, it is easy to see that the probability that such an 
@@ -133,7 +132,7 @@
         </p>
         <p>
           I claim that the preference to not give money to Pascal's Mugger, and 
-          to not flip the coin infinitely many times, are rational, and in fact the 
+          to not flip the coin infinitely many times, are rational, and the 
           reverse preferences are irrational. Recall the very definition of a preference 
           relation: a relation that is connected and transitive. The connectedness 
           condition simply ensures that the preference relation is useful, i.e. that 
@@ -153,8 +152,7 @@
           Matrix-people, or of torturing Pascal for \(n\) days, or whatever, that 
           the higher-EV move is to give you the money. Similarly but less directly, 
           the maximizer who flips the coin as many times as they can is giving up 
-          their \(x>0\) utility for 0 utility. The clever reader may see how we could 
-          turn this into a money-pumping situation.
+          their \(x>0\) utility for 0 utility.
         </p>
         <p>
           If it is irrational to be a money pump, and von Neumann-Morgenstern expected 
@@ -174,7 +172,7 @@
           to the mugger is left as an exercise. To lend some intuition, notice that 
           the probability function for not giving him the money, 
           \(p_1,\) has \(\mathbb{E}(p_1) = -\epsilon T\), where \(-T\) is the utility 
-          of the immense threat he makes and $\epsilon$ is the probability that he's 
+          of the immense threat he makes and \(\epsilon\) is the probability that he's 
           telling the truth; while the probability function for giving him the money, 
           \(p_2,\) has \(\mathbb{E}(p_2) = -c\) for some small constant \(c\) representing 
           the utility of five dollars. If we don't give him the money no matter how big 
@@ -184,12 +182,12 @@
         <p>
           We have seen that the decision-theoretic notion of utility is questionable: 
           a property supposedly meant to identify better and worse outcomes, it turns 
-          out that maximizing it in expectation appears to be irrational, if we take 
+          out that maximizing it in expectation is sometimes irrational, if we take 
           money pumping as a sufficient condition for irrationality. This raises 
           interesting questions about the notion of utility in general. A rational, 
           self-interested agent would prefer not to maximize his own expected utility 
           in the situations we have seen -- are these just "edge cases" somehow, 
-          qualitatively different from the day-to-day EV maximization problems we face? 
+          categorically different from the day-to-day problems we face, where maximizing expected utility <em>is</em> rational? 
           Or do these problems expose an underlying problem with the strategy of maximizing 
           expected utility <em>in general</em>? Perhaps EV maximization just so happens 
           to usually tell us the right thing to do, but for an entirely wrong reason. 
@@ -217,13 +215,13 @@
           evasive on the topic. We fear death in a way that we don't fear never having 
           been born. We see it is obligatory to not kill and as noble to save lives, 
           but the way we view choices regarding the creation of life is nowhere near 
-          analogous -- you're not committing a moral crime by wearing a condom. Is this 
+          analogous -- you're not committing a moral crime by using birth control. Is this 
           just a misalignment of the moral intuitions we've evolved? If \(x\) people 
           exist today and human existence is a net good, would we double the utility 
-          of the world by making it so that $2x$ people exist? Is the most efficient 
+          of the world by making it so that \(2x\) people exist? Is the most efficient 
           way to do good to maximize population size (within environmental constraints)? 
           Would it be better if there were 100 times more people in existence but everyone 
-          was much less well-off? Is there some objective 0 on the utility scale, such 
+          was much less well-off? Is there some objective 0-point on the utility scale, such 
           that positive utilities are good, negative utilities bad, and the scale is 
           unique up to positive <em>linear</em> transformation? Or is there no such 
           thing as good and bad but only better and worse, with a utility function unique 
