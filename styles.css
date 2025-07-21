@@ -25,17 +25,13 @@ body {
 
 /*global link styles*/
 
-a:link, a:visited {
+a:link, a:visited, a:active {
     color: #000000;
     text-decoration: underline;
 }
 
 a:hover {
     color: #007BFF;
-}
-
-a:active {
-    color: #0056b3;
 }
 
 /*navigation bar styles*/
