@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building</title>
+    <base href="/" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Load MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+  </head>
+  <body>
+    <!--menu bar-->
+    <nav>
+        <div class="nav-left">
+            <a href="/">Owen Terry</a>
+        </div>
+        <div class="nav-right">
+            <a href="/">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="writing.html">Writing</a>
+            <a href="favorites.html">Favorite Reads</a>
+        </div>
+    </nav>
+    <!--article-->
+    <div class="main-content">
+      <div class="post-content">
+        <h1>Reflections on Building</h1>
+        <p>
+          <em>
+            Work in progress.
+          </em>
+        </p>
+        <p class="dropcap">
+          So far I’ve built two complete projects, and am currently working on a third. I’ve learned a number of things through this work that I probably would not have learned through my CS classes, and I thought it would be valuable to think out loud about them in an unstructured way. 
+        </p>
+        <p style="text-align:center;">✦</p>
+        <p>
+          Though it’s hard to make a successful startup, i.e. build something useful for a big enough audience to be profitable, it’s easy to build something useful for a small community you’re a part of. I’d guess that this is because, as you decrease the number of people in a community, the number of problems decreases sublinearly, the number of people willing to solve them decreases linearly, and the proportion of the problems you’re aware of grows. I think this fact presents a great opportunity more people should try to take advantage of.
+        </p>
+        <p>
+          A successful project can start with you identifying a broad problem, hypothesizing that other people face it too, and working on a solution. But you can’t deduce every little aspect of what users want in your solution a priori, you have to ask them. For example, we correctly guessed based on our own experience that other people would want a website like Lion Dine, but we didn’t realize how strongly people would want dietary information to be available – we thought this could be a nice afterthought feature, but it was by far the most-requested addition in our feedback form. (We still haven’t implemented this, sorry!)
+        </p>
+        <p>
+          Having a good co-founder (everything I’m talking about here was built with <a href="https://caroline-smyth.com" target="_blank"></a>Caroline</a>) is helpful both for motivation and for solving problems faster. It’s hard to want to work on something when you can’t know whether people will end up using it – unfortunately this is the nature of these sorts of projects – but it’s easier when somebody else shares the vision. Also, since you’re two different people, you’ll naturally be confused by different things, so talking with your co-founder usually speeds you up in getting un-stuck. In other words, two people are far more than twice as productive as one person. It’s also more fun!
+        </p>
+        <p>
+          If you ask AI to solve a bug three times and it can’t figure it out, it’s because the bug is outside of the possibility space you’re considering. 
+        </p>
+        <p>
+          AI is super useful, but it can also slow you down if you’re lazy. If you don’t specify your prompt in enough detail, your codebase quickly becomes pretty different from what you had envisioned, and you lose a lot of time trying to work through this. Letting a reasoning model do its reasoning takes a non-negligible amount of time if you’re doing it regularly, and sometimes you could have implemented the answer faster yourself. (This is also a good reason to use Opus.) Also, sometimes AI appears to not totally understand some tool you’re trying to use, when you could understand it yourself fairly easily by just reading some documentation.
+        </p>
+        <p>
+          Database security is important and doesn’t come automatically. Building Swipe Market was my first time interacting with a database, and it wasn’t until soon before launch that I realized I could send a simple POST request and put literally anything I wanted up on the website. This feels like it should be a stupid problem that anybody who can build an app would be aware of, but serious <a href="https://techcrunch.com/2025/08/06/a-rival-tea-app-for-men-is-leaking-its-users-personal-data-and-drivers-licenses/" target="_blank">startups</a> have run into similarly trivial database security <a href="https://charliemeyer.xyz/posts/security-in-the-vibe-coding-age-hacking-series-so" target="_blank">issues</a> post-deployment. AI has lowered the bar for building quite a bit; I’d expect to continue to see this sort of thing as AI continues to allow more people to create their own products.
+        </p>
+        <p>
+          Distribution matters a lot. Lion Dine only took off after we hung flyers in some dorm elevators. Swipe Market got a lot of users when we launched, since we made an effort to market it. It has had approximately 0 new users this semester, as we haven’t done any advertising at all. Maybe we’ll promote it again sometime this semester if we feel like it and have the time, and see what happens.
+        </p>
+        <p>
+          Hofstadter’s Law states that “It always takes longer than you expect, even when you take into account Hofstadter’s Law.” This has been true for me.
+        </p>
+        <p style="text-align:center;">✦</p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <a href="mailto:owenkterry@gmail.com">owenkterry@gmail.com</a> |
+        <a href="https://github.com/otenwerry/otenwerry.github.io" target="_blank">github repo</a> |
+        <a href="http://linkedin.com/in/owen-kichizo-terry/" target="_blank">linkedin</a>
+      </div>
+    </footer>
+  </body>
+</html>
