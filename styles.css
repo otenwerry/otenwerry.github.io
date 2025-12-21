@@ -236,6 +236,23 @@ footer a:hover {
     line-height: 1;
 }
 
+.post-content figure {
+    max-width: 100%;
+    margin: 1.5em 0;
+}
+
+.post-content figure img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content figcaption {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
 h1 {
     font-weight: 500;
 }
