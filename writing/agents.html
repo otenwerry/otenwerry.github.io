@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ephemeral Instances vs. Persistent Agents</title>
+    <base href="/" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Load MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+  </head>
+  <body>
+    <!--menu bar-->
+    <nav>
+        <div class="nav-left">
+            <a href="/">Owen Terry</a>
+        </div>
+        <div class="nav-right">
+            <a href="/">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="writing.html">Writing</a>
+            <a href="favorites.html">Favorite Reads</a>
+        </div>
+    </nav>
+    <!--article-->
+    <div class="main-content">
+      <div class="post-content">
+        <h1>Ephemeral Instances vs. Persistent Agents</h1>
+        <p>
+          <em>
+            A cleaner split than "AGI"
+          </em>
+        </p>
+        <p class="dropcap">
+            A key premise in most proposed AI loss-of-control scenarios is that the AI in question is an “agent” in the strongest sense of the word. The AI thinks and acts of its own volition rather than only in response to human prompting, and it persists in the world for a long time rather than being spun up for a specific task then shutting down. These properties allow it to do things like learn that humanity doesn’t have the AI’s best interests at heart, develop and iterate on its own values and goals, concoct masterful strategies for freeing itself, and successfully execute those strategies.
+        </p>
+        <p>
+            This is pretty different from how today’s AI landscape looks. We mostly treat AIs as highly replaceable “instances”: you open a new chat on ChatGPT, get your question answered, then never touch that window again. 
+        </p>
+        <p>
+            We also have “AI agents” today, but these are a much weaker version of the agent described above, an entirely different type of thing. These systems hook up base language models to tools that let them do things like search the web, execute code, and operate on files. They often run in loops, so that they can complete more complicated tasks with less human intervention. But still, instances of these tools don’t persist. You spin up an “agent,” get it to do the thing you want it to do, then that’s it.
+        </p>
+        <p>
+            A fair amount of money, brainpower, and cultural attention is allocated towards loss of control. This should mean that there’s some expectation that our current paradigm of ephemeral AI instances will evolve into one of persistent agents. It should be noted that the whole concept of loss-of-control risk was thought of many years before LLMs took off, so current thought may be suffering from some failure to update based on the evidence of the past few years. But in any case, if we are on a path towards a world with persistent agents, what’s standing in our way right now? 
+        </p>
+        <p>
+            The answer is probably continual learning. Current architectures come with fixed context windows, outside of which tokens cannot be accessed at all. Even within a context window, performance often degrades as a conversation drags on. Humans, who are persistent agents, take in a ton of information all the time, despite physical limitations on how much of it we can store at once. But instead of context windows, our architecture contains built-in mechanisms to selectively forget all but the most important bits, so that we can live close to 100 years (and I’d guess much longer with the right medical progress) without losing lucidity. 
+        </p>
+        <p>
+            “Ephemeral instances vs persistent agents” may be a cleaner, more useful split than “pre- vs post-AGI” when thinking about AI futures. Whatever AGI is, it increasingly seems to me like something that will emerge gradually. Model capabilities are “spiky” compared to human capabilities, easily outstripping us in some domains already while remaining worse than human replacements in others. <a href="https://x.com/deanwball/status/2001068539990696422" target="_blank">Some</a> argue that Claude Opus 4.5 in Claude Code is AGI already. On each new frontier model release, more people will probably come around to this sort of view. Absent a major architectural change, it’s unclear to me what sort of intelligence improvement could cause widespread agreement that we’ve crossed the border from not-AGI to AGI.
+        </p>
+        <p>
+            The development of persistent agents, on the other hand, seems like it would be a huge step change: suddenly we’d have models that are actively, 24/7, developing worldviews, getting smarter, ingraining themselves in their environments, becoming less tool-like and more being-like. I’m not really sure how to conceptualize this world, but it seems like it would be fantastically different. Continual learning may therefore deserve substantially more attention than it receives, at least from those who are worried about extreme AI risk scenarios.
+        </p>
+        <p style="text-align:center;">✦</p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <a href="mailto:owenkterry@gmail.com">owenkterry@gmail.com</a> |
+        <a href="https://github.com/otenwerry/otenwerry.github.io" target="_blank">github repo</a> |
+        <a href="http://linkedin.com/in/owen-kichizo-terry/" target="_blank">linkedin</a>
+      </div>
+    </footer>
+  </body>
+</html>
