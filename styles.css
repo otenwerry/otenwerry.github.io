@@ -131,6 +131,38 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.email-copy {
+    text-decoration: underline;
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.email-copy:hover {
+    color: #007BFF;
+}
+
+.email-copy .copied-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    margin-bottom: 6px;
+}
+
+.email-copy .copied-tooltip.show {
+    opacity: 1;
+}
+
 /*projects list styles*/
 
 .content-list {

@@ -84,8 +84,9 @@
         <!--footer-->
         <footer>
             <div class="footer-content">
-                <span onclick="navigator.clipboard.writeText('owenkterry@gmail.com').then(() => { this.textContent='Copied!'; setTimeout(() => this.textContent='owenkterry@gmail.com', 1500) })" style="cursor:pointer">
+                <span class="email-copy" onclick="navigator.clipboard.writeText('owenkterry@gmail.com').then(() => { const t=this.querySelector('.copied-tooltip'); t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1500) })">
                     owenkterry@gmail.com
+                    <span class="copied-tooltip">copied</span>
                 </span> |
                 <a href="https://github.com/otenwerry/otenwerry.github.io" target="_blank">github repo</a> |
                 <a href="http://linkedin.com/in/owen-kichizo-terry/" target="_blank">linkedin</a>
