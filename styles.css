@@ -312,6 +312,13 @@ h1 {
     font-weight: 500;
 }
 
+.page-note {
+    font-size: 0.85em;
+    color: #666;
+    margin: -5px 0 20px 20px;
+    line-height: 1.5;
+}
+
 /*responsive design*/
 
 @media (max-width: 768px) {
