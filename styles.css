@@ -180,7 +180,7 @@ nav a:hover {
     opacity: 1;
 }
 
-/*projects list styles*/
+/*work list styles*/
 
 .content-list {
     padding: 40px;
@@ -351,7 +351,7 @@ h1 {
         margin-bottom: 20px;
     }
 
-    /*stack project items vertically*/
+    /*stack work items vertically*/
     .content-item {
         flex-direction: column;
     }
