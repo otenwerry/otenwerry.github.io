@@ -101,7 +101,7 @@ nav a:hover {
     font-weight: 500;
 }
 
-.home-right p {
+.home-right p, .work-body p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
