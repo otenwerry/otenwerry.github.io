@@ -180,9 +180,9 @@ nav a:hover {
     opacity: 1;
 }
 
-/*work list styles*/
+/*grey box wrapping the body of each top-level page (matches .home-content)*/
 
-.content-list {
+.page-box {
     padding: 40px;
     background-color: #f9f9f9;
     flex: 1;
