@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Work</title>
+        <title>Owen's website</title>
         <base href="/" />
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,13 +29,43 @@
                 <h1>Work</h1>
                 <div class="work-body">
                     <p>
-                        I’m an AI alignment researcher. Right now, I’m researching long-context alignment drift in LLM agents, mentored by <a href="https://www.andriushchenko.me" target="_blank">Maksym Andriushchenko</a> as part of the <a href="https://www.matsprogram.org" target="_blank">MATS 10.1</a> extension. Before MATS, I researched out-of-distribution propensity generalization in LLMs, mentored by <a href="https://scholar.google.com/citations?user=K8lmHy0AAAAJ&hl=en" target="_blank">Niels Warncke</a> through <a href="https://sparai.org" target="_blank">SPAR</a>. 
+                        I am an AI alignment researcher, currently doing the <a href="https://www.matsprogram.org" target="_blank">MATS 10.1</a> extension under <a href="https://www.andriushchenko.me" target="_blank">Maksym Andriushchenko</a>. Recently I’ve been spending my time writing alignment evals, thinking about how LLM propensities  can change in-context, and trying to improve my mental model for how the next 5 years will look.
+                    </p>
+                </div>
+                <!--research outputs-->
+                <div class="work-pubs">
+                    <h2>Research</h2>
+                    <div class="pub">
+                        <p class="pub-title">Measuring alignment drift via trajectory prefixes</p>
+                        <p class="pub-authors"><strong>O. Terry</strong>, M. Andriushchenko</p>
+                        <p class="pub-links"><a href="https://www.lesswrong.com/posts/pdtGsC888sTToZhiY/measuring-alignment-drift-via-trajectory-prefixes" target="_blank">LessWrong</a>, <a href="https://x.com/owen__terry/status/2100616260220600765" target="_blank">Twitter thread</a></p>
+                    </div>
+                    <div class="pub">
+                        <p class="pub-title">Continual Learning in LLM Agents: Capabilities, Risks, and Research Directions</p>
+                        <p class="pub-authors">R. Subramani, R. Arike, <strong>O. Terry</strong>, A. Menon, Z. Jin, F.R. Ward, S. Herd</p>
+                        <p class="pub-venue">TAIS, 2026</p>
+                        <p class="pub-links"><a href="https://static1.squarespace.com/static/68c0e2a71bf8b3372a371105/t/69fc5a58aa38606b69ae9b02/1778145880719/Continual_Learning_camera_ready.pdf" target="_blank">Paper</a>, <a href="https://www.lesswrong.com/s/oc5Auteiibo56kNXw" target="_blank">LessWrong</a></p>
+                    </div>
+                    <div class="pub">
+                        <p class="pub-title">Predicting how models generalize out of distribution</p>
+                        <p class="pub-authors">J. Hunter, J. Taraz, L. Wen, B. Cohen, <strong>O. Terry</strong>, N. Warncke</p>
+                        <p class="pub-links"><a href="https://library.sparai.org/attachments/reports/receqPz0xdMbCYQ5e/predicting-how-models-generalize-out-of-distribution-bcyq5e.pdf" target="_blank">Paper</a></p>
+                    </div>
+                </div>
+                <div class="work-body">
+                    <h2>Why?</h2>
+                    <p>
+                        It seems likely that we’ll develop AIs that are better than the best humans in nearly every domain within my lifetime, and maybe much sooner. I think this poses a number of serious, unprecedented, civilization-scale threats. For example, we currently seem to not be very good at robustly instilling good values in LLMs. If we don’t get better at this soon, we may end up with superintelligent models whose values look alien to us; these misaligned models may try to escape human control, and they may succeed. If we manage to solve this problem, we may still end up with extremely powerful tools that massively uplift how much bad actors can accomplish — for example, future AI could help a malicious group engineer a pandemic. And on top of all this, sufficiently general-purpose AI may make it very difficult for many people to find employment; this could lead to extreme concentration of power.
                     </p>
                     <p>
-                        AI systems are becoming able to execute increasingly complex tasks over long time horizons with less and less supervision. If this trend continues for long enough, major safety challenges could emerge: how do we know that the AI is doing what we think it’s doing, if it’s working on something really complicated? How do we know if it’s engaging in something like self-reflection, changing its own characteristics over time? My current research interests revolve around these questions: understanding the extent to which we should be worried about these problems, and looking for ways to increase our confidence that increasingly agentic AIs embody values that remain aligned with the interests of humanity.
+                        Nevertheless, there are a lot of future possibilities to be excited about: AGI could revolutionize medicine, create immense abundance, give people way more free time, etc. But we have to safely navigate the risks above in order to fully realize these possibilities, and right now I don’t think that we’re on track.
                     </p>
                     <p>
-                        In the past, I’ve done independent AI alignment research in the <a href="https://valueslab.github.io" target="_blank">ValuesLab</a>, AI safety grantmaking at the <a href="https://effectiveinstitutionsproject.org" target="_blank">Effective Institutions Project</a>, and climate science research at Columbia’s <a href="https://lamont.columbia.edu" target="_blank">earth observatory</a>. During undergrad, I built <a href="https://liondine.com" target="_blank">Lion Dine</a> and <a href="https://swipemarketcu.com" target="_blank">Swipe Market</a>, both of which are still being used by a lot of Columbia students, as far as I know. Lion Dine is now owned by <a href="https://www.specpublishing.com/" target="_blank">Spectator Publishing Company</a>, and Swipe Market by <a href="https://columbiasoftwaresolutions.com/" target="_blank">Columbia Software Solutions</a>. 
+                        In short, I think we may be in the early stages of one of the most pivotal moments of human history, and I’m trying to do what I can to help figure out how to make things go well.
+                    </p>
+                    <h2>Previously</h2>
+                    <p>
+                        Before MATS, I researched out-of-distribution propensity generalization in LLMs, mentored by <a href="https://scholar.google.com/citations?user=K8lmHy0AAAAJ&hl=en" target="_blank">Niels Warncke</a> through <a href="https://sparai.org" target="_blank">SPAR</a>. Before that, I did independent AI safety research in the <a href="https://valueslab.github.io" target="_blank">ValuesLab</a>, AI safety grantmaking at the <a href="https://effectiveinstitutionsproject.org" target="_blank">Effective Institutions Project</a>, and climate science research at Columbia’s <a href="https://lamont.columbia.edu" target="_blank">earth observatory</a>. During undergrad, I built <a href="https://liondine.com" target="_blank">Lion Dine</a> and <a href="https://swipemarketcu.com" target="_blank">Swipe Market</a>, both of which are still being used by a lot of Columbia students, as far as I know. Lion Dine is now owned by <a href="https://www.specpublishing.com/" target="_blank">Spectator Publishing Company</a>, and Swipe Market by <a href="https://columbiasoftwaresolutions.com/" target="_blank">Columbia Software Solutions</a>. I also helped run Columbia’s effective altruism group.
                     </p>
                 </div>
             </div>

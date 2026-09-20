@@ -107,6 +107,63 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+/*section headings on the work page*/
+
+.work-body h2, .work-pubs h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 40px 0 20px 0;
+}
+
+/*each entry: a left rule ties its lines together*/
+.pub {
+    margin: 0 0 24px 0;
+    padding-left: 16px;
+    border-left: 3px solid #cccccc;
+}
+
+/*lines below the title sit close together*/
+.pub p {
+    margin: 0;
+    line-height: 1.35;
+}
+
+/*title keeps a little air below it*/
+.pub .pub-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.pub .pub-authors {
+    color: #333333;
+}
+
+.pub .pub-authors strong {
+    font-weight: 600;
+    color: #000000;
+}
+
+.pub .pub-venue {
+    font-style: italic;
+    font-size: 0.95em;
+    color: #555555;
+}
+
+.pub .pub-links {
+    font-size: 0.95em;
+    color: #555555;
+}
+
+.pub-links a:link, .pub-links a:visited {
+    color: #555555;
+}
+
+.pub-links a:hover {
+    color: #007BFF;
+}
+
 /*social icon links under the photo*/
 .home-social {
     display: flex;
